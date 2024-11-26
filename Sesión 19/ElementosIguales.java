@@ -10,7 +10,7 @@ public class ElementosIguales {
         System.out.println("Introduce los componentes: ");
         for(int i = 0; i < m.length; i++){
             for (int j = 0; j < m[i].length; j++){
-                m[i] [j] = t.nextInt();
+                m[i][j] = t.nextInt();
             } 
         }
         System.out.println("Introduce la posición a comprobar: ");
