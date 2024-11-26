@@ -4,7 +4,7 @@ public class MatrizTraspuesta {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce el tamaño de la matriz cuadrada: ");
         int tamaño = teclado.nextInt();
-        System.out.println("Introduce las componentes de la amtriz: ");
+        System.out.println("Introduce las componentes de la matriz: ");
         int [] [] matriz1 = new int [tamaño] [tamaño];
         int [] [] matriz2 = new int [tamaño] [tamaño];
         for (int i = 0; i < matriz1.length;i++){
