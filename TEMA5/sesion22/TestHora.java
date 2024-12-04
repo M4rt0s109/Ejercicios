@@ -1,4 +1,4 @@
-package ejercicios.sesion22;
+package Ejercicios.TEMA5.sesion22;
 
 public class TestHora {
     public static void main(String[] args) {

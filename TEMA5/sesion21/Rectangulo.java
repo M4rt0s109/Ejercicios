@@ -1,4 +1,4 @@
-package ejercicios.sesion21;
+package Ejercicios.TEMA5.sesion21;
 
 public class Rectangulo {
     private double x;
