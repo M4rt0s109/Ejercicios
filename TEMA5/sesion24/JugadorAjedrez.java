@@ -1,4 +1,4 @@
-package Ejercicios.TEMA5.sesion24;
+package ejercicios.TEMA5.sesion24;
 
 public class JugadorAjedrez {
     private String nombre;
@@ -50,7 +50,8 @@ public class JugadorAjedrez {
     public String toString() {
         return "JugadorAjedrez [nombre=" + getNombre() + ", edad=" + getEdad() + ", puntos=" + getPuntos() + ", K = " + getK() + "]";
     }
-    public void actualizaELO(JugadorAjedrez x, int resultado){
-        this.puntos = (this.getPuntos() + this.getK()) * (resultado - (int)((Math.pow(10,(this.getPuntos() / 400.0))/Math.pow(10,(this.getPuntos()/400.0)) + (Math.pow(10,(x.getPuntos() / 400.0))))));
-    }
+    public int actualizaELO(JugadorAjedrez x, int resultado){
+        int puntos = (this.getPuntos() + this.getK()) * (resultado - (int)(((Math.pow(10,(this.getPuntos() / 400.0)))/((Math.pow(10,(this.getPuntos()/400.0))) + (Math.pow(10,(x.getPuntos() / 400.0)))))));
+        return puntos;
+    }   
 }
