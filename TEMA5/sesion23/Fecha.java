@@ -43,6 +43,8 @@ public class Fecha {
         if ((this.año <= a.año) && (this.mes <= a.mes) && (this.dia < a.dia)) return true;
         else return false;
     }
+    
+    @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
@@ -63,5 +65,6 @@ public class Fecha {
     @Override
     public String toString() {
         return "Fecha: " + getDia() + "/" + getMes() + "/" + getAño() ;
-    }   
+    }
+
 }
